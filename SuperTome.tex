@@ -1,0 +1,163 @@
+\documentclass[12pt,twoside,onecolumn,openany,final]{memoir}
+
+\setlength{\paperheight}{10in}
+\setlength{\paperwidth}{8in}
+\setstocksize{\paperheight}{\paperwidth}
+
+\setlrmarginsandblock{.5in}{.5in}{*}
+\setulmarginsandblock{.5in}{.5in}{*}
+\checkandfixthelayout
+
+\usepackage[toc,lot,lof]{multitoc}
+%\usepackage[top=.75in, bottom=.75in, left=.75in, right=.75in]{geometry}
+\usepackage{graphicx} \graphicspath{{./images/}}
+\usepackage{longtable}
+\usepackage{mdwlist}
+\usepackage{microtype} \DisableLigatures{encoding = *, family = *}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage[normalem]{ulem}
+\usepackage{wrapfig}
+\usepackage{xtab}
+\usepackage{enumerate}
+\usepackage{phonetic}
+\usepackage{bbding}
+\usepackage{linearb}
+\usepackage{cypriot}
+\usepackage{tipa}
+\usepackage{xfrac}
+\usepackage{appendix}
+\usepackage{xparse}
+\usepackage{letltxmacro}
+\usepackage{makeidx} \makeindex
+\usepackage[table]{xcolor}
+\definecolor{offyellow}{RGB}{255,255,128}
+\definecolor{links}{RGB}{200,0,50}
+
+%% Font
+\usepackage[T1]{fontenc}
+\usepackage[bitstream-charter]{mathdesign}
+%\usepackage{aurical}
+
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=links,pdfstartview={XYZ null null 1.00}]{hyperref}
+%possible option: bookmarksdepth=2
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% End of Import Section %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{commands}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Title Page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+\begin{center}
+\textsc{\Large}\\[0.25cm]
+\rule{\linewidth}{0.5mm} \\[0.70cm]
+\fontsize{30}{30} \selectfont Super Tome\\[.30cm]
+\fontsize{16}{18} \selectfont \guillemotleft{} For that game we all known and love \guillemotright{}\\
+\rule{\linewidth}{0.5mm} \\[0.6cm]
+%\includegraphics[clip,trim=5cm 2cm 9cm 1cm,width=\linewidth]{images/OldBookArt--MapImages-173.jpg}
+\vfill
+\footnotesize{\textit{This material is Open Game Content, and is licensed for public use under the terms of the Open Game License v1.0a.}}\\
+\normalsize{\today}
+\end{center}
+
+\pagebreak
+\sffamily
+\pagestyle{plain}
+\raggedbottom
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Table of Contents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\contentsname}{Table of Contents}
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Main Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Primary Chapters Here
+
+\clearpage
+\chapter{Introduction}
+foo
+\chapter{Races}
+bar
+\chapter{Classes}
+baz
+\chapter{Skills}
+qwop
+\chapter{Feats}
+flop
+\chapter{Background and Alignment}
+aardvark
+\chapter{Equipment}
+flower
+\chapter{Travel and Exploration}
+star
+\chapter{Combat}
+wheel
+\chapter{Magic}
+book
+\chapter{Character Advancement}
+wind
+\chapter{Prestige Classes}
+hook
+\chapter{The Planes}
+shadow
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendixpage
+
+\makeatletter
+\renewcommand{\@makechapterhead}[1]{%
+\vspace*{0 pt}{
+\raggedright \normalfont \fontsize{32}{32} \selectfont \bfseries
+\ifnum \value{secnumdepth}>-1
+  \if@mainmatter \vspace{-8pt} {\fontsize{20}{20} \selectfont Appendix \thechapter:}\\[8pt]
+  \fi%
+\fi
+\hspace{0.65cm} #1\par\nobreak\vspace{20 pt}
+}}
+\makeatother
+
+\clearpage
+
+%% Appendix Chapters Here
+
+\chapter{Spells}
+yak
+\chapter{Monsters}
+yuck
+\chapter{NPC Classes}
+crab
+
+
+\input{super-tome-ogl}
+
+\clearpage
+\phantomsection
+\listoftables
+
+\clearpage
+\phantomsection
+\printindex
+
+\end{document}

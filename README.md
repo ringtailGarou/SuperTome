@@ -20,7 +20,7 @@ Attribution-ShareAlike license. The Open Game License can be found here:
 
 http://www.wizards.com/d20/files/OGLv1.0a.rtf
 
-The <super-tome-ogl.tex> file contains the Section 15 copyright notices
+The <tt>super-tome-ogl.tex</tt> file contains the Section 15 copyright notices
 of all other Open Game Content that has been included in this work, as
 required by Section 6 of the OGL.
 

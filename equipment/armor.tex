@@ -1,0 +1,272 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Armor}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Armor Traits}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Each type of armor has an \gameterm{Armor Category}, \gameterm{Armor Bonus}, \gameterm{Maximum Dex}, \gameterm{Armor Check Penalty}, \gameterm{Armor Stealth Penalty}, and Weight.
+
+\begin{description*}
+\item[Armor Category] Armors are split into four proficiency groups. Non-armor, Light armor, Medium armor, and Heavy armor.
+\item[Armor Bonus] This is how much wearing the armor improves your Armor Class by. Naturally, armor provides an Armor bonus to AC, so an armor bonus from another source (such as the \linkspell{Mage Armor} spell) won't stack.
+\item[Maximum Dex] Your dexterity bonus to your armor class is restricted to no more than this value. For example, Full Plate has a Maximum Dex of +1, so a character with a Dexterity bonus of +2 or more would only get 1 of that towards their AC while wearing Full Plate (total of 19, assuming no other bonuses). Maximum Dex does not affect any other use of the Dexterity Bonus, such as Initiative, Reflex Saves, or skill checks.
+\item[Armor Check Penalty (ACP)] This penalty applies to all \linkskill{Balance}, \linkskill{Climb}, \linkskill{Escape Artist}, \linkskill{Jump}, \linkskill{Sleight of Hand}, and \linkskill{Tumble} checks that you make. Twice this applies to all \linkskill{Swim} checks that you make.
+\item[Armor Stealth Penalty (ASP)] This applies to all \linkskill{Hide} and \linkskill{Move Silently} checks that you make.
+\item[Weight] This is how much the armor weighs.
+\end{description*}
+
+Masterwork armor has an Armor Check Penalty that's 1 point better than normal (minimum of 0).
+
+%%%
+\subsubsection{Non-proficiency}
+%%%
+
+If you are not-proficient with the armor that you're wearing then its Armor Check Penalty counts as being 4 points worse than normal.
+
+Just because you're proficient in heavy armor doesn't mean that you're familiar with every piece of heavy armor you encounter. Mechanus Armor is very protective, but chances are slim that a character has actually encountered this equipment before.
+
+In general, when a character runs into some new armor (as they will from time to time), they will continue to be non-proficient with it for about a day as they "break it in". So to make full use of your new Chitin Carapace, you'll need two things: Medium Armor Proficiency, and a day to practice with your new bug exoskeleton.
+
+%%%
+\subsubsection{Effects of High BAB}
+%%%
+
+Highly trained warriors learn about armor as well as weapons, and they can wear it better than others can. For every 2 full points that your BAB exceeds your Armor Check Penalty, reduce your armor's effective Armor Stealth Penalty by 1 and increase it's effective Maximum Dex by 1. When making this comparison, just compare the absolute values (since ACP is almost always negative and BAB is almost always positive).
+
+\textit{Example:} Fiona is a 10th level Fighter, so her BAB is +10. She's wearing Full Plate, which has an Armor Check Penalty of -6. Since her BAB is 4 points higher than her Armor Check Penalty, she counts her Maximum Dex as 2 points better than normal (total of +3) and her Armor Stealth Penalty as 2 points better than normal (total of -4) when wearing that armor.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Shield Traits}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Shields are exactly like armor except with the following differences:
+
+\begin{description*}
+\item[Shield Category] Shields only come in two proficiency categories. Normal shields are just "Shields", and over-sized shields are known as "Great Shields".
+
+\item[Shield Bonus] Instead of an Armor bonus, shields provide a Shield type bonus to armor class.
+
+\item[Maximum Dex] Shields don't limit the amount of dexterity that you can apply to your armor class.
+\end{description*}
+
+Shields use the same rules for Armor Check Penalty and Armor Stealth Penalty as Armor. If you're wearing armor and also using a shield then combine the ACP and ASP of the two items before comparing it to your BAB. If you're not proficient with both your armor and your shield then you take the non-proficiency penalty for each item (your ACP is a total of 8 points worse than normal).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Armor Check Penalty and Movement}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+When wearing armor, using a shield, or carrying a Medium or Heavy load, your movement is often affected.
+
+\begin{itemize*}
+\item If your total Armor Check Penalty is greater than your BAB, your movement is reduced to 2/3rds normal (rounded to the nearest 5ft). A 30ft movement speed becomes 20ft, and a 20ft movement speed becomes 15ft.
+\item If it's greater than your BAB + 4, then you can't charge or run at all.
+\item If it's greater than your BAB + 10, then you can only stagger around (only a single move action or standard action each round).
+\end{itemize*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Arcane Spells and Armor}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+Most arcane spellcasting techniques are not well suited to armor use, this is known as \gameterm{Arcane Spell Failure}, or sometimes as simply \gameterm{Spell Failure}. By default, for each point of armor check penalty that you have there is a 5\% chance that any arcane spell that you cast with Somatic component will fail. Some classes have special class features that allow them to cast arcane spells while wearing their favored category (usually just Light armor).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Doning and Removing Armor}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In general, it takes 1 minute per point of armor check penalty to properly don a suit of armor and adjust everything to fit your particular body as closely as possible. This takes a minimum of 1 minute for any multi-part outfits or full-body suits, even if they have an ACP of 0. If it's a single piece of clothing, such as a robe or cloak, then it's just a move action. If the armor check penalty exceeds your BAB then it takes twice as long if you don't have someone assisting you. If it exceeds your BAB+10 then you it takes five times as long without an assistant.
+
+Removing armor is much quicker. It takes 1 round per point of armor check penalty, and you don't need assistants regardless of your ACP compared to BAB. Even if you don't know how to wear it properly, you can just undo straps and wiggle out of it all on your own. Removing your armor provokes an attack of opportunity (each round, similar to a spell with a long casting time). As with equipping an outfit, it takes a minimum of 1 round remove a full-body suit or multi-part outfit, even if the outfit's ACP is 0. Removing a single piece of clothing such as a cloak or robe is a move action that doesn't provoke an attack.
+
+If you're in such an extreme hurry to get the armor off that every round counts (such as suddenly being underwater) then you can usually cut at straps, break ties, or similar, to get the armor off twice as fast. Doing so damages the armor, increasing its armor check penalty by 1, reducing its AC bonus by 1, and negating the armor's special ability, until the armor is repaired. The damage can be repaired with a Craft check, the DC is the same as to construct the armor, and it requires 1\% of the armor's base market value in new materials.
+
+It takes only a single Move action to strap a shield to your arm, or remove it. As with drawing a weapon, if your BAB is +1 or more and you're proficient with the shield then you can combine movement and equipping or removing a shield into a single action. If your BAB is +6 or more then you can equip or remove a shield as a Swift action. Equipping or removing a shield doesn't provoke an attack of opportunity.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Non-Standard Armors}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The armor costs listed are for Medium Humanoids. Armor and shields for unusually big creatures, unusually little creatures, and nonhumanoid creatures have different costs and weights from those given. Refer to the appropriate line on the table and apply the multipliers to cost and weight for the armor type in question.
+
+\begin{table}[htb]
+\rowcolors{1}{white}{offyellow}
+\caption{Non-standard Armor Prices}
+\centering
+\begin{tabular}{l c c c c}
+& \multicolumn{2}{c}{\textbf{Humanoid}} & \multicolumn{2}{c}{\textbf{Non-Humanoid}}\\
+\textbf{Size} & \textbf{gp} & \textbf{lb} & \textbf{gp} & \textbf{lb}\\
+Tiny or smaller\textsuperscript{1} & x\sfrac{1}{2} & x1/10 & x1  & x1/10\\
+Small & x1 & x\sfrac{1}{2} & x1 & x\sfrac{1}{2}\\
+Medium & x1 & x1 & x2 & x1\\
+Large & x2 & x2 & x4 & x2\\
+Huge & x4 & x5 & x8 & x5\\
+Gargantuan& x8 & x8 & x16 & x8\\
+Colossal & x16 & x12 & x32 & x12\\
+\multicolumn{5}{l}{\textsuperscript{1}Divide armor bonus by 2.}\\
+\end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Fantastic Armors}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\tagline{"I know it's stupid looking, but I get the best possible protection from having this duck sit on my head, so I'm going to let it do that."}
+
+People in Fantasy settings wear all kinds of crazy crap and call it protective gear. That's fine; we even encourage that sort of thing. What we don't encourage is people mixing and matching their metaphors. And yet, by having people keep track of separate materials and armor types -- that's exactly what happens. We've all seen Lord of the Rings, we know what Mithral Armor is supposed to be like, and what it is not supposed to be like. And making your plate mail out of Mithral isn't what things are supposed to look like -- you're supposed to get Mithral Chain.
+
+The fact is that materials naturally lend themselves to certain kinds of armor. Just as braided twigs are always going to make Wicker Armor and cured cow skin is always going to make Leather Armor, there's just a certain way that armoring yourself with Dragon Scales or Cloyster Shells is going to work. For the vast majority of materials, there is a known "right way" to wear it for protection and the only real choice is wearing more of it or less.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Armor and Shield Descriptions}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%
+\subsubsection{Non-Armors}
+%%%
+
+Anything you wear is technically a form of armor, but anything sufficiently light as to not count even as Light Armor can be worn by characters who lack armor proficiency without suffering penalties.
+
+\begin{table}[htb]
+\rowcolors{1}{white}{offyellow}
+\caption{Non-Armors}
+\centering
+\begin{tabular}{l *{4}{c} r c}
+\textbf{Name} & \textbf{AC} & \textbf{Max Dex} & \textbf{ACP} & \textbf{ASP} & \textbf{Price} & \textbf{Weight}\\
+Camouflage Clothes & +0 & +8 & -0 & -0 & 1 gp & 1 lb\\
+Fancy Clothes & +0 & +6 & -1 & -2 & 30 gp & 2 lb\\
+Functional Clothes & +0 & +8 & -0 & -0 & 1 gp & 1 lb\\
+Magic Clothes & +2 & +9 & -0 & -0 & 8,000 gp & 1 lb\\
+\end{tabular}
+\end{table}
+
+\todo{Non-Armor special effects}
+
+%%%
+\subsubsection{Light Armor}
+%%%
+
+\begin{table}[htb]
+\rowcolors{1}{white}{offyellow}
+\caption{Light Armors}
+\centering
+\begin{tabular}{l *{4}{c} r c}
+\textbf{Name} & \textbf{AC} & \textbf{Max Dex} & \textbf{ACP} & \textbf{ASP} & \textbf{Price} & \textbf{Weight}\\
+Brigandine & +5 & +3 & -4 & -3 & 125 gp & 30lb\\
+Chain Shirt & +4 & +5 & -2 & -4 & 100 gp & 25lb\\
+Cord Armor & +2 & +4 & -1 & +0 & 20 gp & 15 lb\\
+Darkleaf Armor & +4 & +6 & -1 & +0 & 600 gp & 15 lb\\
+Gray Armor & +3 & +8 & +0 & +0 & 1,000 gp & 15 lb\\
+Leather Armor & +2 & +7 & +0 & +0 & 15 gp & 15 lb\\
+Mithral Shirt & +5 & +6 & +0 & +0 & 1,100 gp & 15 lb\\
+Padded Armor & +1 & +8 & +0 & +0 & 10 gp & 10 lb\\
+Spiderweb Clothing & +4 & +6 & -1 &  -1 & 300 gp & 10 lb\\
+Still Suit & +2 & +5 & -3 & -2 & 350 gp & 15 lb\\
+Studded Leather Armor & +3 & +6 & -1 & -1 & 25 gp & 20 lb\\
+Wicker Armor & +3 & +7 & -1 & -6 & 15 gp & 15 lb\\
+Winter Clothes & +2 & +4 & -4 & -4 & 30 gp & 10 lb\\
+\end{tabular}
+\end{table}
+
+\todo{Light Armor special effects}
+
+%%%
+\subsubsection{Medium Armor}
+%%%
+
+\begin{table}[htb]
+\rowcolors{1}{white}{offyellow}
+\caption{Medium Armors}
+\centering
+\begin{tabular}{l *{4}{c} r c}
+\textbf{Name} & \textbf{AC} & \textbf{Max Dex} & \textbf{ACP} & \textbf{ASP} & \textbf{Price} & \textbf{Weight}\\
+Adamantine Breastplate & +7 & +3 & -6 & -2 & 5,000 gp & 30 lb\\
+Animal Spirit Armor & +4 & +3 & -3 & -3 & 750 gp & 25 lb\\
+Astral Silk Armor & +5 & +4 & -1 & -5 & 900 gp & 20 lb\\
+Bone Armor & +3 & +4 & -3 & -5 & 450 gp & 30 lb\\
+Breastplate & +5 & +4 & -4 & -2 & 200 gp & 30 lb\\
+Chainmail & +5 & +3 & -3 & -5 & 150 gp & 40 lb\\
+Chitin Carapace & +5 & +4 & -3 & -1 & 500 gp & 30 lb\\
+Dragonscale Shirt & +6 & +5 & -4 & -2 & 1,400 gp & 25 lb\\
+Elaborate Gown & +1 & +3 & -5 & -8 & 300 gp & 15 lb\\
+Hide Armor & +3 & +4 & -3 & -4 & 15 gp & 25 lb\\
+Lamellar Armor & +4 & +4 & -4 & -4 & 190 gp & 30 lb\\
+Lobster Mail & +5 & +2 & -5 & -3 & 350 gp & 25 lb\\
+Mithril Suit & +6 & +5 & -2 & -1 & 5,000 gp & 20 lb\\
+Rime Hauberk & +5 & +3 & -5 & -3 & 150 gp & 25 lb\\
+Ringmail & +4 & +4 & -2 & -3 & 100 gp & 40 lb\\
+Scale Mail & +4 & +3 & -4 & -2 & 50 gp & 30 lb\\
+\end{tabular}
+\end{table}
+
+\todo{Medium Armor special effects}
+
+%%%
+\subsubsection{Heavy Armor}
+%%%
+
+\begin{table}[htb]
+\rowcolors{1}{white}{offyellow}
+\caption{Heavy Armors}
+\centering
+\begin{tabular}{l *{4}{c} r c}
+\textbf{Name} & \textbf{AC} & \textbf{Max Dex} & \textbf{ACP} & \textbf{ASP} & \textbf{Price} & \textbf{Weight}\\
+Adamant Carapace & +11 & +2 & -9 & -4 & 9,000 gp & 50 lb\\
+Coral Armor & +5 & +2 & -3 & -6 & 1,300 gp & 45 lb\\
+Demon Armor & +9 & +5 & -10 & -3 & 10,000 gp & 35 lb\\
+Deep Clay Armor & +6 & +3 & -4 & -5 & 4,000 gp & 50 lb\\
+Dragonscale Plate & +9 & +4 & -5 & -2 & 3,000 gp & 45 lb\\
+Full Plate & +8 & +1 & -6 & -6 & 1,500 gp & 50 lb\\
+Great Armor & +7 & +2 & -7 & -5 & 1,400 gp & 50 lb\\
+Half-plate & +7 & +2 & -5 & -7 & 800 gp & 50 lb\\
+Hoplite Armor & +6 & +1 & -9 & -5 & 500 gp & 50 lb\\
+Mechanus Armor & +12 & +0 & -8 & -8 & 10,000 gp & 60 lb\\
+Silk Steel Armor & +7 & +3 & -4 & -1 & 4,500 gp & 45 lb\\
+Stone Plate & +10 & +0 & -9 & -11 & 1,750 gp & 60 lb\\
+Sun Plate & +9 & +6 & -10 & -8 & 6,000 gp & 35 lb\\
+\end{tabular}
+\end{table}
+
+\todo{Heavy Armor special effects}
+
+%%%
+\subsubsection{Shields}
+%%%
+
+\begin{table}[htb]
+\rowcolors{1}{white}{offyellow}
+\caption{Shields}
+\centering
+\begin{tabular}{l *{3}{c} r c}
+\textbf{Name} & \textbf{AC} & \textbf{ACP} & \textbf{ASP} & \textbf{Price} & \textbf{Weight}\\
+Adamantine Shield & +3 & -1 & +0 & 2,000gp & 6 lb\\
+Buckler & +1 & -1 & +0 & 15 gp & 5 lb\\
+Dragonscale Shield & +3 & -1 & -6 & 350 gp & 6 lb\\
+Force Shield & +3 & +0 & +0 & 1,800 gp & 1 lb\\
+Mithral Shield & +2 & -1 & +0 & 1,020 gp & 3 lb\\
+Steel Shield & +2 & -1 & +0 & 20 gp & 6 lb\\
+Vine Shield & +1 & -1 & +0 & 45 gp & 4 lb\\
+Wooden Shield & +1 & -1 & +0 & 15 gp & 5 lb\\
+\end{tabular}
+\end{table}
+
+\todo{Shield special effects}
+
+%%%
+\subsubsection{Great Shields}
+%%%
+
+\begin{table}[htb]
+\rowcolors{1}{white}{offyellow}
+\caption{Great Shields}
+\centering
+\begin{tabular}{l *{3}{c} r c}
+\textbf{Name} & \textbf{AC} & \textbf{ACP} & \textbf{ASP} & \textbf{Price} & \textbf{Weight}\\
+Bone Wall & +3 & -6 & -2 & 150 gp & 10 lb\\
+Crystal Aegis & +3 & -3 & -1 & 2,000 gp & 15 lb\\
+Ice Aegis & +5 & -5 & -3 & 1,600 gp & 15 lb\\
+Kappa Shell & +3 & -8 & -5 & 500 gp & 25 lb\\
+Kite Shield & +4  & -5 & -2 & 120 gp & 15 lb\\
+Tower Shield & +4 & -6 & -2 & 100 gp & 45 lb\\
+\end{tabular}
+\end{table}
+
+\todo{Great Shield special effects}

@@ -12,9 +12,9 @@ Each type of armor has an \gameterm{Armor Category}, \gameterm{Armor Bonus}, \ga
 \item[Armor Category] Armors are split into four proficiency groups. Non-armor, Light armor, Medium armor, and Heavy armor.
 \item[Armor Bonus] This is how much wearing the armor improves your Armor Class by. Naturally, armor provides an Armor bonus to AC, so an armor bonus from another source (such as the \linkspell{Mage Armor} spell) won't stack.
 \item[Maximum Dex] Your dexterity bonus to your armor class is restricted to no more than this value. For example, Full Plate has a Maximum Dex of +1, so a character with a Dexterity bonus of +2 or more would only get 1 of that towards their AC while wearing Full Plate (total of 19, assuming no other bonuses). Maximum Dex does not affect any other use of the Dexterity Bonus, such as Initiative, Reflex Saves, or skill checks.
-\item[Armor Check Penalty (ACP)] This penalty applies to all \linkskill{Balance}, \linkskill{Climb}, \linkskill{Escape Artist}, \linkskill{Jump}, \linkskill{Sleight of Hand}, and \linkskill{Tumble} checks that you make. Twice this applies to all \linkskill{Swim} checks that you make.
+\item[Armor Check Penalty (ACP)] This penalty applies to all \linkskill{Balance}, \linkskill{Climb}, \linkskill{Escape Artist}, \linkskill{Jump}, \linkskill{Sleight of Hand}, and \linkskill{Tumble} checks that you make. This penalty applies double to all \linkskill{Swim} checks that you make.
 \item[Armor Stealth Penalty (ASP)] This applies to all \linkskill{Hide} and \linkskill{Move Silently} checks that you make.
-\item[Weight] This is how much the armor weighs.
+\item[Weight] This is just how much the armor weighs.
 \end{description*}
 
 Masterwork armor has an Armor Check Penalty that's 1 point better than normal (minimum of 0).
@@ -123,7 +123,7 @@ The fact is that materials naturally lend themselves to certain kinds of armor. 
 \subsubsection{Non-Armors}
 %%%
 
-Anything you wear is technically a form of armor, but anything sufficiently light as to not count even as Light Armor can be worn by characters who lack armor proficiency without suffering penalties.
+Anything you wear is technically a form of armor, but anything sufficiently light as to not count even as Light Armor can be worn by characters who lack armor proficiency without suffering penalties. Each clothing type listed here has a wide range of possibilities for what you might actually wear while counting as wearing that type of clothing, and there's all sorts of regional and cultural variations, as you might imagine. Most non-adventurers just wear something that counts as functional clothing during their day to day lives.
 
 \begin{table}[htb]
 \rowcolors{1}{white}{offyellow}
@@ -133,12 +133,18 @@ Anything you wear is technically a form of armor, but anything sufficiently ligh
 \textbf{Name} & \textbf{AC} & \textbf{Max Dex} & \textbf{ACP} & \textbf{ASP} & \textbf{Price} & \textbf{Weight}\\
 Camouflage Clothes & +0 & +8 & -0 & -0 & 1 gp & 1 lb\\
 Fancy Clothes & +0 & +6 & -1 & -2 & 30 gp & 2 lb\\
-Functional Clothes & +0 & +8 & -0 & -0 & 1 gp & 1 lb\\
+Functional Clothes & +0 & -- & -0 & -0 & 3 sp & 1 lb\\
 Magic Clothes & +2 & +9 & -0 & -0 & 8,000 gp & 1 lb\\
 \end{tabular}
 \end{table}
 
-\todo{Non-Armor special effects}
+\textbf{Camouflage Clothes:} These are made with a color scheme intended to blend into a specific kind of area, such as forests, tundra, or deserts, etc. While you're in the appropriate terrain for your particular outfit, you can attempt to hide from any creature that's more than 10ft away from you even while being observed.
+
+\textbf{Fancy Clothes:} This can be any kind of military dress uniform, religious garb, noble finery, or other clothing that looks expensive and official. While wearing fancy clothes, you get a +2 to Diplomacy and Bluff, and you get a +4 to Intimidate checks with peasants.
+
+\textbf{Functional Clothes:} Cheap, basic, and practical, these clothes tend to have at least one useful pocket, pouch, or strap that you can slip an item into, probably more than one. You can retrieve items stored in said pockets as a free action. Unlike other armors, functional clothing has no maximum dexterity bonus at all.
+
+\textbf{Magic Clothes:} Usually a robe, or a vest, or sometimes magic shorts that never rip even when you shapeshift into a huge monster. These clothes have been magically treated so that the cloth provides a simple protection while remaining light enough to be used by those who are unskilled in the arts of armor. They are very rarely found or sold without a magic item property already added (though it is possible). Similar to fancy clothing, magic clothing provides a certain air of authority to the wearer, giving them a +1 on all Charisma checks.
 
 %%%
 \subsubsection{Light Armor}

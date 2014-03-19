@@ -13,10 +13,10 @@ PDF.
 License
 =======
 
-The non-image game content of this work is Open Game Content and is
-available under the Open Game License. The images and LaTeX code of this
-project are available to you under the Creative Commons
-Attribution-ShareAlike license. The Open Game License can be found here:
+The non-image content of this work is Open Game Content and is available
+under the Open Game License. The images of this project are Product Identity,
+and available to you under the Creative Commons Attribution-ShareAlike
+license. The Open Game License can be found here:
 
 http://www.wizards.com/d20/files/OGLv1.0a.rtf
 

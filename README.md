@@ -4,11 +4,15 @@ SuperTome
 A Tome compilation PDF that is intended to eventually be complete enough
 such that you can play an entire game without the player needing to rely
 on external documents for character creation, gameplay, and character
-advancement. It seeems inevitable that the MC may need to rely on
-external resources, particularly when trying to find good monsters to
-place as opposition. Still, a limited selection of monsters is probably
-going to be eventually included in the project, probably as a separate
-PDF.
+advancement.
+
+It seems inevitable that the MC may need to rely on external resources,
+particularly when trying to find good monsters to place as opposition.
+Still, a limited selection of monsters is probably going to be eventually
+included in the project, probably as a separate PDF. Monsters are the
+lowest priority though, since MCs can just look them up on websites.
+SRD monsters, as well as other monsters that are compatible with the SRD
+system should all be fine to use.
 
 License
 =======

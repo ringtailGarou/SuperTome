@@ -116,11 +116,19 @@
     {\hyperref[sec:#1]{#2}}%second arg, link to first and display second
 }
 
+\newcommand{\testempty}{\empty}
+\newcommand{\isempty}{\empty}
+%Two commands that can be compared to one another for \ifx logic tests.
+%\isempty should never be changed.
+%If \testempty holds a value of anything but empty, the test should return false.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Class Chapter Special Commands
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%Class Table Commands
 
 \newcommand{\gbab}{\empty}
 \newcommand{\mbab}{\empty}
@@ -134,16 +142,16 @@
 \newcommand{\poorbab}{\renewcommand{\gbab}{a}\renewcommand{\mbab}{a}}
 %A set of commands to tell LaTeX what BAB progression the class has. Only one should be called per class.
 
-\newcommand{\goodfort}{\renewcommand{\fort}{\empty}}
-\newcommand{\poorfort}{\renewcommand{\fort}{a}}
+\newcommand{\goodfor}{\renewcommand{\fort}{\empty}}
+\newcommand{\poorfor}{\renewcommand{\fort}{a}}
 %A set of commands to tell LaTeX what Fortitude progression the class has. Only one should be called per class.
 
 \newcommand{\goodref}{\renewcommand{\refl}{\empty}}
 \newcommand{\poorref}{\renewcommand{\refl}{a}}
 %A set of commands to tell LaTeX what Reflex progression the class has. Only one should be called per class.
 
-\newcommand{\goodwill}{\renewcommand{\will}{\empty}}
-\newcommand{\poorwill}{\renewcommand{\will}{a}}
+\newcommand{\goodwil}{\renewcommand{\will}{\empty}}
+\newcommand{\poorwil}{\renewcommand{\will}{a}}
 %A set of commands to tell LaTeX what Will progression the class has. Only one should be called per class.
 
 \newenvironment{classtable}[1]
@@ -152,7 +160,7 @@
 \rowcolors{1}{white}{offyellow}
 \caption{#1}
 \centering
-\begin{tabular}{l *{4}{c} l}
+\begin{tabular}{l l *{3}{c} l}
 \textbf{Level} & \textbf{BAB} & \textbf{Fort} & \textbf{Reflex} & \textbf{Will} & \textbf{Special}\\
 }{
 \end{tabular}
@@ -160,13 +168,27 @@
 }
 %A a new environment that sets up the class tables. Include the \level commands between \begin{classtable}.
 
+\newenvironment{extraclasstable}[2]
+{
+\begin{table}[htb]
+\rowcolors{1}{white}{offyellow}
+\caption{#1}
+\centering
+\begin{tabular}{l l *{3}{c} l c}
+\textbf{Level} & \textbf{BAB} & \textbf{Fort} & \textbf{Reflex} & \textbf{Will} & \textbf{Special} & #2\\
+}{
+\end{tabular}
+\end{table}
+}
+%A a new environment that sets up the class tables. Include the \level commands between \begin{classtable}
+
 \newenvironment{minorcastingclasstable}[1]
 {
 \begin{table}[htb]
 \rowcolors{1}{offyellow}{white}
 \caption{#1}
 \centering
-\begin{tabular}{l *{4}{c} l *{7}{c}}
+\begin{tabular}{l l *{3}{c} l *{7}{c}}
 \multicolumn{6}{c}{\cellcolor{white}} & \multicolumn{7}{c}{\cellcolor{white} \textbf{Spells Per Day}}\\
 \textbf{Level} & \textbf{BAB} & \textbf{Fort} & \textbf{Reflex} & \textbf{Will} & \textbf{Special} & \textbf{0}&\textbf{1}&\textbf{2}&\textbf{3}&\textbf{4}&\textbf{5}&\textbf{6}\\
 }{
@@ -182,7 +204,7 @@
 \rowcolors{1}{offyellow}{white}
 \caption{#1}
 \centering
-\begin{tabular}{l *{4}{c} l *{10}{c}}
+\begin{tabular}{l l *{3}{c} l *{10}{c}}
 \multicolumn{6}{c}{\cellcolor{white}} & \multicolumn{10}{c}{\cellcolor{white}\textbf{Spells Per Day}}\\
 \textbf{Level} & \textbf{BAB} & \textbf{Fort} & \textbf{Reflex} & \textbf{Will} & \textbf{Special}& \textbf{0}&\textbf{1}&\textbf{2}&\textbf{3}&\textbf{4}&\textbf{5}&\textbf{6}&\textbf{7}&\textbf{8}&\textbf{9}\\
 }{

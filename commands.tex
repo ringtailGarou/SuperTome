@@ -122,6 +122,18 @@
 %\isempty should never be changed.
 %If \testempty holds a value of anything but empty, the test should return false.
 
+\newenvironment{basictable}[2]
+{
+\begin{table}[htb]
+\rowcolors{1}{white}{offyellow}
+\caption{#1}
+\centering
+\begin{tabular}{#2}
+}{
+\end{tabular}
+\end{table}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Class Chapter Special Commands

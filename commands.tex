@@ -60,11 +60,6 @@
 
 \newcommand{\raceentry}[1]{\oldsection{#1}\index{#1}\label{race:#1}}
 
-\newcommand{\classentry}[1]{\oldsection{#1}\index{#1}\label{class:#1}}
-\newcommand{\Requirements}{\oldsubsubsection*{Requirements}}
-\newcommand{\Basics}{\oldsubsubsection*{Basics}}
-\newcommand{\ClassFeatures}{\oldsubsubsection*{Class Features}}
-
 \newcommand{\skillentry}[2]{\oldsubsection[#1]{#1 #2}\index{#1 (skill)}\label{skill:#1}}
 
 \NewDocumentCommand\featentry{m+g}{%
@@ -140,6 +135,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand{\currentclassname}{foo}
+\newcommand{\classentry}[1]{\oldsection{#1}\index{#1}\label{class:#1}\renewcommand{\currentclassname}{#1}}
+%\newcommand{\Requirements}{\oldsubsubsection*{Requirements}}
+%\newcommand{\Basics}{\oldsubsubsection*{Basics}}
+\newcommand{\classfeatures}{\oldsubsubsection*{Class Features}
+All of the following are class features of the \currentclassname}
+
 %%%%Class Table Commands
 
 \newcommand{\gbab}{\empty}
@@ -166,11 +168,11 @@
 \newcommand{\poorwil}{\renewcommand{\will}{a}}
 %A set of commands to tell LaTeX what Will progression the class has. Only one should be called per class.
 
-\newenvironment{classtable}[1]
+\newenvironment{classtable}
 {
 \begin{table}[htb]
 \rowcolors{1}{white}{offyellow}
-\caption{#1}
+\caption{The \currentclassname}
 \small
 \centering
 \begin{tabular}{l l *{3}{c} l}
@@ -181,26 +183,26 @@
 }
 %A a new environment that sets up the class tables. Include the \level commands between \begin{classtable}.
 
-\newenvironment{extraclasstable}[2]
+\newenvironment{extraclasstable}[1]
 {
 \begin{table}[htb]
 \rowcolors{1}{white}{offyellow}
-\caption{#1}
+\caption{The \currentclassname}
 \small
 \centering
 \begin{tabular}{l l *{3}{c} l c}
-\textbf{Level} & \textbf{BAB} & \textbf{Fort} & \textbf{Reflex} & \textbf{Will} & \textbf{Special} & #2\\
+\textbf{Level} & \textbf{BAB} & \textbf{Fort} & \textbf{Reflex} & \textbf{Will} & \textbf{Special} & #1\\
 }{
 \end{tabular}
 \end{table}
 }
 %A a new environment that sets up the class tables. Include the \level commands between \begin{classtable}
 
-\newenvironment{minorcastingclasstable}[1]
+\newenvironment{minorcastingclasstable}
 {
 \begin{table}[htb]
 \rowcolors{1}{offyellow}{white}
-\caption{#1}
+\caption{The \currentclassname}
 \small
 \centering
 \begin{tabular}{l l *{3}{c} l *{7}{c}}
@@ -213,11 +215,11 @@
 %A a new environment similar to classtable, but with columns for a minor (zero through six) spell slot progression.
 %uses "reverse" rowcolors from the base classtable because of the extra row that says "spells per day"
 
-\newenvironment{fullcastingclasstable}[1]
+\newenvironment{fullcastingclasstable}
 {
 \begin{table}[htb]
 \rowcolors{1}{offyellow}{white}
-\caption{#1}
+\caption{The \currentclassname}
 \small
 \centering
 \begin{tabular}{l l *{3}{c} l *{10}{c}}

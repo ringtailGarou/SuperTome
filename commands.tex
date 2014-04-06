@@ -207,7 +207,7 @@ All of the following are class features of the \currentclassname}
 \centering
 \begin{tabular}{l l *{3}{c} l *{7}{c}}
 \multicolumn{6}{c}{\cellcolor{white}} & \multicolumn{7}{c}{\cellcolor{white} \textbf{Spells Per Day}}\\
-\textbf{Level} & \textbf{BAB} & \textbf{Fort} & \textbf{Reflex} & \textbf{Will} & \textbf{Special} & \textbf{0}&\textbf{1}&\textbf{2}&\textbf{3}&\textbf{4}&\textbf{5}&\textbf{6}\\
+\textbf{Level} & \textbf{BAB} & \textbf{Fort} & \textbf{Ref} & \textbf{Will} & \textbf{Special} & \textbf{0}&\textbf{1}&\textbf{2}&\textbf{3}&\textbf{4}&\textbf{5}&\textbf{6}\\
 }{
 \end{tabular}
 \end{table}
@@ -222,9 +222,9 @@ All of the following are class features of the \currentclassname}
 \caption{The \currentclassname}
 \small
 \centering
-\begin{tabular}{l l *{3}{c} l *{10}{c}}
+\begin{tabular}{l l c c c l *{10}{c}}
 \multicolumn{6}{c}{\cellcolor{white}} & \multicolumn{10}{c}{\cellcolor{white}\textbf{Spells Per Day}}\\
-\textbf{Level} & \textbf{BAB} & \textbf{Fort} & \textbf{Reflex} & \textbf{Will} & \textbf{Special}& \textbf{0}&\textbf{1}&\textbf{2}&\textbf{3}&\textbf{4}&\textbf{5}&\textbf{6}&\textbf{7}&\textbf{8}&\textbf{9}\\
+\textbf{Level} & \textbf{BAB} & \textbf{Fort} & \textbf{Ref} & \textbf{Wil} & \textbf{Special}& \textbf{0}&\textbf{1}&\textbf{2}&\textbf{3}&\textbf{4}&\textbf{5}&\textbf{6}&\textbf{7}&\textbf{8}&\textbf{9}\\
 }{
 \end{tabular}
 \end{table}
@@ -269,105 +269,105 @@ All of the following are class features of the \currentclassname}
 	 & #1 \\}
 
 \newcommand{\levelsix}[1]{
-6th  & \ifx\gbab\isempty +6/+1 \else\ifx\mbab\isempty +4 \else +3 \fi \fi
+6th  & \ifx\gbab\isempty +6 \else\ifx\mbab\isempty +4 \else +3 \fi \fi
 	 & \ifx\fort\isempty +5 \else +2 \fi
 	 & \ifx\refl\isempty +5 \else +2 \fi
 	 & \ifx\will\isempty +5 \else +2 \fi
 	 & #1 \\}
 
 \newcommand{\levelseven}[1]{
-7th  & \ifx\gbab\isempty +7/+2 \else\ifx\mbab\isempty +5 \else +3 \fi \fi
+7th  & \ifx\gbab\isempty +7 \else\ifx\mbab\isempty +5 \else +3 \fi \fi
 	 & \ifx\fort\isempty +5 \else +2 \fi
 	 & \ifx\refl\isempty +5 \else +2 \fi
 	 & \ifx\will\isempty +5 \else +2 \fi
 	 & #1 \\}
 
 \newcommand{\leveleight}[1]{
-8th  & \ifx\gbab\isempty +8/+3 \else\ifx\mbab\isempty +6/+1 \else +4 \fi \fi
+8th  & \ifx\gbab\isempty +8 \else\ifx\mbab\isempty +6 \else +4 \fi \fi
 	 & \ifx\fort\isempty +6 \else +2 \fi
 	 & \ifx\refl\isempty +6 \else +2 \fi
 	 & \ifx\will\isempty +6 \else +2 \fi
 	 & #1 \\}
 
 \newcommand{\levelnine}[1]{
-9th  & \ifx\gbab\isempty +9/+4 \else\ifx\mbab\isempty +6/+1 \else +4 \fi \fi
+9th  & \ifx\gbab\isempty +9 \else\ifx\mbab\isempty +6 \else +4 \fi \fi
 	 & \ifx\fort\isempty +6 \else +3 \fi
 	 & \ifx\refl\isempty +6 \else +3 \fi
 	 & \ifx\will\isempty +6 \else +3 \fi
 	 & #1 \\}
 
 \newcommand{\levelten}[1]{
-10th & \ifx\gbab\isempty +10/+5 \else\ifx\mbab\isempty +7/+2 \else +5 \fi \fi
+10th & \ifx\gbab\isempty +10 \else\ifx\mbab\isempty +7 \else +5 \fi \fi
 	 & \ifx\fort\isempty +7 \else +3 \fi
 	 & \ifx\refl\isempty +7 \else +3 \fi
 	 & \ifx\will\isempty +7 \else +3 \fi
 	 & #1 \\}
 
 \newcommand{\leveleleven}[1]{
-11th & \ifx\gbab\isempty +11/+6/+6 \else\ifx\mbab\isempty +8/+3 \else +5 \fi \fi
+11th & \ifx\gbab\isempty +11 \else\ifx\mbab\isempty +8 \else +5 \fi \fi
 	 & \ifx\fort\isempty +7 \else +3 \fi
 	 & \ifx\refl\isempty +7 \else +3 \fi
 	 & \ifx\will\isempty +7 \else +3 \fi
 	 & #1 \\}
 
 \newcommand{\leveltwelve}[1]{
-12th & \ifx\gbab\isempty +12/+7/+7 \else\ifx\mbab\isempty +9/+4 \else +6/+1 \fi \fi
+12th & \ifx\gbab\isempty +12 \else\ifx\mbab\isempty +9 \else +6/+1 \fi \fi
 	 & \ifx\fort\isempty +8 \else +4 \fi
 	 & \ifx\refl\isempty +8 \else +4 \fi
 	 & \ifx\will\isempty +8 \else +4 \fi
 	 & #1 \\}
 
 \newcommand{\levelthirteen}[1]{
-13th & \ifx\gbab\isempty +13/+8/+8 \else\ifx\mbab\isempty +9/+4 \else +6/+1 \fi \fi
+13th & \ifx\gbab\isempty +13 \else\ifx\mbab\isempty +9 \else +6 \fi \fi
 	 & \ifx\fort\isempty +8 \else +4 \fi
 	 & \ifx\refl\isempty +8 \else +4 \fi
 	 & \ifx\will\isempty +8 \else +4 \fi
 	 & #1 \\}
 
 \newcommand{\levelfourteen}[1]{
-14th & \ifx\gbab\isempty +14/+9/+9 \else\ifx\mbab\isempty +10/+5 \else +7/+2 \fi \fi
+14th & \ifx\gbab\isempty +14 \else\ifx\mbab\isempty +10 \else +7 \fi \fi
 	 & \ifx\fort\isempty +9 \else +4 \fi
 	 & \ifx\refl\isempty +9 \else +4 \fi
 	 & \ifx\will\isempty +9 \else +4 \fi
 	 & #1 \\}
 
 \newcommand{\levelfifteen}[1]{
-15th & \ifx\gbab\isempty +15/+10/+10 \else\ifx\mbab\isempty +11/+6/+6 \else +7/+2 \fi \fi
+15th & \ifx\gbab\isempty +15 \else\ifx\mbab\isempty +11 \else +7 \fi \fi
 	 & \ifx\fort\isempty +9 \else +5 \fi
 	 & \ifx\refl\isempty +9 \else +5 \fi
 	 & \ifx\will\isempty +9 \else +5 \fi
 	 & #1 \\}
 
 \newcommand{\levelsixteen}[1]{
-16th & \ifx\gbab\isempty +16/+11/+11/+11 \else\ifx\mbab\isempty +12/+7/+7 \else +8/+3 \fi \fi
+16th & \ifx\gbab\isempty +16 \else\ifx\mbab\isempty +12 \else +8 \fi \fi
 	 & \ifx\fort\isempty +10 \else +5 \fi
 	 & \ifx\refl\isempty +10 \else +5 \fi
 	 & \ifx\will\isempty +10 \else +5 \fi
 	 & #1 \\}
 
 \newcommand{\levelseventeen}[1]{
-17th & \ifx\gbab\isempty +17/+12/+12/+12 \else\ifx\mbab\isempty +12/+7/+7 \else +8/+3 \fi \fi
+17th & \ifx\gbab\isempty +17 \else\ifx\mbab\isempty +12 \else +8 \fi \fi
 	 & \ifx\fort\isempty +10 \else +5 \fi
 	 & \ifx\refl\isempty +10 \else +5 \fi
 	 & \ifx\will\isempty +10 \else +5 \fi
 	 & #1 \\}
 
 \newcommand{\leveleighteen}[1]{
-18th & \ifx\gbab\isempty +18/+13/+13/+13 \else\ifx\mbab\isempty +13/+8/+8 \else +9/+4 \fi \fi
+18th & \ifx\gbab\isempty +18 \else\ifx\mbab\isempty +13 \else +9 \fi \fi
 	 & \ifx\fort\isempty +11 \else +6 \fi
 	 & \ifx\refl\isempty +11 \else +6 \fi
 	 & \ifx\will\isempty +11 \else +6 \fi
 	 & #1 \\}
 
 \newcommand{\levelnineteen}[1]{
-19th & \ifx\gbab\isempty +19/+14/+14/+14 \else\ifx\mbab\isempty +14/+9/+9 \else +9/+4 \fi \fi
+19th & \ifx\gbab\isempty +19 \else\ifx\mbab\isempty +14 \else +9 \fi \fi
 	 & \ifx\fort\isempty +11 \else +6 \fi
 	 & \ifx\refl\isempty +11 \else +6 \fi
 	 & \ifx\will\isempty +11 \else +6 \fi
 	 & #1 \\}
 
 \newcommand{\leveltwenty}[1]{
-20th & \ifx\gbab\isempty +20/+15/+15/+15 \else\ifx\mbab\isempty +15/+10/+10 \else +10/+5 \fi \fi
+20th & \ifx\gbab\isempty +20 \else\ifx\mbab\isempty +15 \else +10 \fi \fi
 	 & \ifx\fort\isempty +12 \else +6 \fi
 	 & \ifx\refl\isempty +12 \else +6 \fi
 	 & \ifx\will\isempty +12 \else +6 \fi

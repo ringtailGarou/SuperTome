@@ -129,6 +129,18 @@
 \end{table}
 }
 
+\newenvironment{smallbasictable}[2]
+{
+\begin{table}[htb]
+\rowcolors{1}{white}{offyellow}
+\caption{#1}
+\centering \small
+\begin{tabular}{#2}
+}{
+\end{tabular}
+\end{table}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Class Chapter Special Commands

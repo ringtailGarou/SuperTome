@@ -62,12 +62,6 @@
 
 \newcommand{\skillentry}[2]{\oldsubsection[#1]{#1 #2}\index{#1 (skill)}\label{skill:#1}}
 
-\NewDocumentCommand\featentry{m+g}{%
-  \IfNoValueTF{#2}
-    {\oldsubsubsection[#1]{#1 [General]}\label{feat:#1}}%no second arg, general feat
-    {\oldsubsubsection[#1]{#1 #2}\label{feat:#1}}%second arg, special type of feat
-}
-
 \newcommand{\spellentry}[1]{\oldsubsubsection{#1}\label{spell:#1}}
 
 \NewDocumentCommand\linkrace{m+g}{%
@@ -148,9 +142,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\currentclassname}{foo}
+
 \newcommand{\classentry}[1]{\oldsection{#1}\index{#1}\label{class:#1}\renewcommand{\currentclassname}{#1}}
-%\newcommand{\Requirements}{\oldsubsubsection*{Requirements}}
-%\newcommand{\Basics}{\oldsubsubsection*{Basics}}
+
 \newcommand{\classfeatures}{\oldsubsubsection*{Class Features}
 All of the following are class features of the \currentclassname}
 
@@ -384,3 +378,16 @@ All of the following are class features of the \currentclassname}
 	 & \ifx\refl\isempty +12 \else +6 \fi
 	 & \ifx\will\isempty +12 \else +6 \fi
 	 & #1 \\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Feats Chapter Special Commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NewDocumentCommand\featentry{m+g}{%
+  \IfNoValueTF{#2}
+    {\oldsubsubsection[#1]{#1 [General]}\label{feat:#1}\index{#1}}%no second arg, general feat
+    {\oldsubsubsection[#1]{#1 #2}\label{feat:#1}\index{#1}}%second arg, special type of feat
+}
+

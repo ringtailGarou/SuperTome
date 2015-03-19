@@ -1,0 +1,149 @@
+\documentclass[12pt,twoside,onecolumn,openany,final]{memoir}
+
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8in}
+\setstocksize{\paperheight}{\paperwidth}
+
+\setlrmarginsandblock{.5in}{.5in}{*}
+\setulmarginsandblock{.5in}{.5in}{*}
+\checkandfixthelayout
+
+\usepackage[toc,lot,lof]{multitoc}
+%\usepackage[top=.75in, bottom=.75in, left=.75in, right=.75in]{geometry}
+\usepackage{graphicx} \graphicspath{{./images/}}
+\usepackage{longtable}
+\usepackage{mdwlist}
+\usepackage{microtype} \DisableLigatures{encoding = *, family = *}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage[normalem]{ulem}
+\usepackage{wrapfig}
+\usepackage{xtab}
+\usepackage{enumerate}
+\usepackage{phonetic}
+\usepackage{bbding}
+\usepackage{linearb}
+\usepackage{cypriot}
+\usepackage{tipa}
+\usepackage{xfrac}
+\usepackage{appendix}
+\usepackage{xparse}
+\usepackage{letltxmacro}
+\usepackage{makeidx} \makeindex
+\usepackage[table]{xcolor}
+\definecolor{offyellow}{RGB}{255,255,128}
+\definecolor{links}{RGB}{200,0,50}
+
+\usepackage{placeins}
+\usepackage{floatflt}
+\usepackage{anyfontsize}
+\usepackage{colortbl}
+\usepackage{tabularx}
+\usepackage{mdframed}
+\usepackage{longtable}
+\usepackage{tabu}
+\usepackage{afterpage}
+\usepackage{caption}
+\usepackage{amsmath}
+
+%% Font
+\usepackage[T1]{fontenc}
+\usepackage[bitstream-charter]{mathdesign}
+%\usepackage{aurical}
+
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=links,bookmarksdepth=2,pdfstartview={XYZ null null 1.00}]{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% End of Import Section %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{commands}
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Main Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Primary Chapters Here
+
+\clearpage
+\chapter{Introduction}
+foo
+
+\input{chapter-heads/02-races}
+\input{chapter-heads/03-classes}
+\input{chapter-heads/04-skills}
+\input{chapter-heads/05-feats}
+\input{chapter-heads/06-background-and-alignment}
+\input{chapter-heads/07-equipment}
+
+\chapter{Travel and Exploration}
+star
+\chapter{Combat}
+wheel
+\chapter{Magic}
+book
+\section{Magic Overview} 1
+\section{Casting Spells} 2
+\section{Spell Descriptions} 3
+\section{Arcane Spells} 4
+\section{Divine Spells} 5
+\section{Spheres} 6
+\section{Spell Lists} 7
+
+\chapter{Character Advancement}
+wind
+\chapter{Prestige Classes}
+hook
+
+\input{chapter-heads/13-npc_classes}
+
+\chapter{The Planes}
+shadow
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Appendix
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+\appendixpage
+
+\makeatletter
+\renewcommand{\@makechapterhead}[1]{%
+\vspace*{0 pt}{
+\raggedright \normalfont \fontsize{32}{32} \selectfont \bfseries
+\ifnum \value{secnumdepth}>-1
+  \if@mainmatter \vspace{-8pt} {\fontsize{20}{20} \selectfont Appendix \thechapter:}\\[8pt]
+  \fi%
+\fi
+\hspace{0.65cm} #1\par\nobreak\vspace{20 pt}
+}}
+\makeatother
+
+\clearpage
+
+%% Appendix Chapters Here
+
+\chapter{Spells}
+yak
+\chapter{Monsters}
+yuck
+
+
+\input{super-tome-ogl}
+
+\clearpage
+\phantomsection
+\listoftables
+
+\clearpage
+\phantomsection
+\printindex
+
+\end{document}
